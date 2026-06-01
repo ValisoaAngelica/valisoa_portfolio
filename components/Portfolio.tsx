@@ -7,7 +7,7 @@ export default function Portfolio() {
       description:
         "Développement d’une plateforme intelligente permettant le suivi et la gestion des groupes électrogènes avec intégration de l’API Gemini de Google pour certaines fonctionnalités IA. Réalisation du back-end en Python avec Flask, gestion des données avec MySQL et conception de l’interface utilisateur en HTML, CSS et JavaScript.",
       image: "/capture-ecran.png",
-      technologies: ["Python", "Flask", "MySQL", "Gemini API"],
+      technologies: ["Python", "Django", "MySQL", "Gemini API","HTML/CSS","Bootstrap","JavaScript","Postman"],
     },
 
     {
@@ -15,23 +15,23 @@ export default function Portfolio() {
       description:
         "Mise à jour et amélioration d’une application web de gestion et de suivi d’inventaire. Participation à l’optimisation des fonctionnalités backend en Python ainsi qu’à la gestion des données et à l’amélioration de l’interface utilisateur.",
       image: "/inventaire.png",
-      technologies: ["Python", "MySQL", "HTML/CSS", "JavaScript"],
+      technologies: ["Python", "MySQL","HTML/CSS", "JavaScript"],
     },
 
     {
       title: "E-commerce Bookishco",
       description:
         "Projet académique collectif consistant à concevoir une plateforme e-commerce dédiée à la vente de livres en ligne avec gestion des produits, panier et espace utilisateur.",
-      image: "/ecommerce-website-interface.png",
-      technologies: ["PHP", "MySQL", "Bootstrap"],
+      image: "/e_commerce.webp",
+      technologies: ["PHP", "MySQL", "Bootstrap","HTML/CSS","JavaScript"],
     },
 
     {
       title: "Site de recettes",
       description:
         "Développement d’un site web de recettes culinaires avec le framework Flask permettant l’affichage dynamique des contenus et la gestion des recettes.",
-      image: "/api-development-interface.png",
-      technologies: ["Python", "Flask", "MySQL"],
+      image: "/site_recette.png",
+      technologies: ["Python", "Flask", "MySQL","Bootstrap","HTML/CSS","JavaScript"],
     },
   ]
 

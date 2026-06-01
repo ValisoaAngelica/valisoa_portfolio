@@ -7,6 +7,9 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Valisoa Portfolio",
   description: "Portfolio de Valisoa - Développeuse Web",
+  icons: {
+    icon: "/PXL_20250907_133656429.jpg",
+  },
 }
 
 export default function RootLayout({
