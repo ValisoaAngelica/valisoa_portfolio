@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Valisoa-portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#portfolio" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Valisoa Angelica</h1>
+            <h3>And I'm a <span class="multiple-text"></span> </h3>
+            <p>Passionate developer with expertise in backend development, web design, and music. I create innovative solutions that blend technical excellence with creative vision.</p>
+            <div class="social-media">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-twitter'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="home.png" alt="Valisoa Angelica" width="300" height="300">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="home.png" alt="About Valisoa">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Backend Developer & Web Designer</h3>
+            <p>I'm a passionate developer with a strong background in backend development and web design. My journey in technology started with a curiosity about how things work behind the scenes, which led me to specialize in server-side development and database management.</p>
+            <p>When I'm not coding, you'll find me playing guitar, exploring new technologies, or working on creative projects that combine my technical skills with artistic expression. I believe in creating solutions that are not only functional but also elegant and user-friendly.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Backend Development</h3>
+                <p>Proficient in server-side technologies, API development, and database management. Experience with Node.js, Python, and various database systems.</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-paint'></i>
+                <h3>Web Design</h3>
+                <p>Creating beautiful and responsive user interfaces with modern design principles. Skilled in HTML, CSS, JavaScript, and various frameworks.</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-music'></i>
+                <h3>Music & Creativity</h3>
+                <p>Guitar player with a passion for music composition. This creative background enhances my approach to problem-solving and design thinking.</p>
+            </div>
+        </div>
+
+        <div class="skills-progress">
+            <div class="progress-item">
+                <h4>JavaScript</h4>
+                <div class="progress-bar">
+                    <div class="progress" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="progress-item">
+                <h4>Python</h4>
+                <div class="progress-bar">
+                    <div class="progress" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="progress-item">
+                <h4>HTML/CSS</h4>
+                <div class="progress-bar">
+                    <div class="progress" data-width="95%"></div>
+                </div>
+            </div>
+            <div class="progress-item">
+                <h4>Node.js</h4>
+                <div class="progress-bar">
+                    <div class="progress" data-width="80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="/placeholder.svg?height=300&width=400" alt="Project 1">
+                <div class="portfolio-layer">
+                    <h4>Module de gestion de groupe électrogènes</h4>
+                    <p>A full-stack web application with modern UI/UX design and robust backend functionality.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/placeholder.svg?height=300&width=400" alt="Project 2">
+                <div class="portfolio-layer">
+                    <h4>Mobile App Design</h4>
+                    <p>Responsive mobile application design with intuitive user interface and seamless user experience.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/placeholder.svg?height=300&width=400" alt="Project 3">
+                <div class="portfolio-layer">
+                    <h4>API Development</h4>
+                    <p>RESTful API backend system with comprehensive documentation and scalable architecture.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/placeholder.svg?height=300&width=400" alt="Project 4">
+                <div class="portfolio-layer">
+                    <h4>E-commerce Platform</h4>
+                    <p>Complete e-commerce solution with payment integration and inventory management system.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/placeholder.svg?height=300&width=400" alt="Project 5">
+                <div class="portfolio-layer">
+                    <h4>Music App</h4>
+                    <p>Music streaming application combining my passion for music with technical expertise.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/placeholder.svg?height=300&width=400" alt="Project 6">
+                <div class="portfolio-layer">
+                    <h4>Data Visualization</h4>
+                    <p>Interactive dashboard for data analysis with real-time updates and comprehensive reporting.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Valisoa Angelica | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
