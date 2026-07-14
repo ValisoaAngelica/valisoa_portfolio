@@ -31,7 +31,7 @@ export default function Trainings() {
   return (
     <section className="education" id="trainings">
       <h2 className="heading">
-        Ma <span>Formation</span>
+        Mes <span>Formations</span>
       </h2>
 
       <div className="education-grid">
