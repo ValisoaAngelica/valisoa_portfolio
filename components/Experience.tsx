@@ -32,7 +32,7 @@ export default function Experience() {
   return (
     <section className="experience" id="experience">
       <h2 className="heading">
-        Mon <span>Expérience</span>
+        Mes <span>Expériences</span>
       </h2>
 
       <div className="experience-grid">
