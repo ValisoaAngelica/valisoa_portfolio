@@ -4,9 +4,9 @@ export default function About() {
   return (
     <>
       <section className="about" id="about">
-        <div className="about-img">
+        {/* <div className="about-img">
           <Image src="/PXL_20250907_133656429.jpg" alt="About Valisoa" width={400} height={400} />
-        </div>
+        </div> */}
         <div className="about-content">
           <h2 className="heading">
             About <span>Me</span>

@@ -21,26 +21,6 @@ export default function Hero() {
           Technologies, mention Informatique parcours Informatique, Risques et
           Décisions à l&apos;ESMIA avec une solide expérience en développement web.
         </p>
-        <div className="contact-info">
-          <p>
-            <i className="bx bx-envelope"></i>
-            rasamoelinavalisoa53@gmail.com
-          </p>
-          <p>
-            <a
-              href="https://github.com/ValisoaAngelica"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bxl-github"></i>
-              github.com/ValisoaAngelica
-            </a>
-          </p>
-        </div>
-
-        <a href="/cv_Angelica.pdf" download className="btn">
-          Download CV
-        </a>
       </div>
 
       <div className="home-img">

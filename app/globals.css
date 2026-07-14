@@ -2,7 +2,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -170,7 +169,17 @@ section {
 
 .navbar {
   display: flex;
-  gap: 35px;
+  gap: 31px;
+}
+
+#menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 23px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 101;
 }
 
 .nav-link {
@@ -231,7 +240,7 @@ section {
 }
 
 .home-content p {
-  font-size: 16px;
+  font-size: 20px;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
@@ -246,35 +255,11 @@ section {
   border-radius: 50%;
 }
 
-.social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid #0ef;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #0ef;
-  text-decoration: none;
-  margin: 30px 15px 30px 0;
-  transition: .5s ease;
-  opacity: 0;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: calc(.2s * var(--i));
-}
-
-.social-media a:hover {
-  background: #0ef;
-  color: #1f242d;
-  box-shadow: 0 0 20px #0ef;
-}
-
 .btn {
   display: inline-block;
   padding: 12px 28px;
   background: #0ef;
+  margin-top: 23px;
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
   font-size: 16px;
@@ -572,7 +557,6 @@ section {
   }
 }
 
-
 /* CONTACT SECTION */
 .contact h2 {
   margin-bottom: 3rem;
@@ -616,32 +600,62 @@ section {
   margin-top: 2rem;
   cursor: pointer;
 }
-.contact-info {
-  margin: 1.5rem 0;
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(28rem, 100%), 1fr));
+  gap: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.contact-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 1rem;
+  padding: 3rem 2rem;
+  background: #323946;
+  border: 0.2rem solid transparent;
+  border-radius: 1.4rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-info p,
-.contact-info a {
+.contact-card:hover {
+  transform: translateY(-0.8rem);
+  border-color: #0ef;
+  box-shadow: 0 0 2rem rgba(0, 238, 255, 0.35);
+}
+
+.contact-card-icon {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: rgba(0, 238, 255, 0.12);
+  color: #0ef;
+  font-size: 2.8rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-card:hover .contact-card-icon {
+  background: #0ef;
+  color: #1f242d;
+}
+
+.contact-card-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact-card-value {
+  font-size: 1.4rem;
   color: #cbd5e1;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.contact-info i {
-  color: #38bdf8;
-  font-size: 1.3rem;
-}
-
-.contact-info a:hover {
-  color: #38bdf8;
-  transform: translateX(5px);
+  word-break: break-word;
 }
 .toast {
   position: fixed;
@@ -913,7 +927,6 @@ section {
   font-size: 0.95rem;
 }
 
-
 @keyframes slideIn {
   from {
     transform: translateX(120%);
@@ -1052,9 +1065,49 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 
+  .header {
+    padding: 20px 5%;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
   .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 260px;
+    max-width: 80%;
+    padding: 20px 0;
+    background: rgba(31, 36, 45, 0.98);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 12px;
+    box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.35);
     flex-direction: column;
-    gap: 15px;
+    gap: 0;
+
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .navbar.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar .nav-link {
+    display: block;
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-align: left;
+    /* les animations d'entree n'ont pas de sens dans un menu deroulant */
+    opacity: 1;
+    animation: none;
   }
 }
 

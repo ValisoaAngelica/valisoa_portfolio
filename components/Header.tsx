@@ -8,12 +8,13 @@ import Link from "next/link"
 export default function Header() {
   const [activeSection, setActiveSection] = useState("home")
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 100)
 
-      const sections = ["home", "about", "experience","trainings", "skills", "project", "contact"]
+      const sections = ["home", "about", "experience", "trainings", "skills", "project", "contact"]
       const current = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
@@ -35,15 +36,25 @@ export default function Header() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
+    setMenuOpen(false)
   }
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
-      <Link href="#home" className="logo" onClick={() => scrollToSection("home")}>
+      <Link href="" className="logo" onClick={() => scrollToSection("home")}>
         Portfolio
       </Link>
 
-      <nav className="navbar">
+      <button
+        id="menu-icon"
+        onClick={() => setMenuOpen((prev) => !prev)}
+        aria-label="Ouvrir le menu"
+        aria-expanded={menuOpen}
+      >
+        {menuOpen ? "\u2715" : "\u2630"}
+      </button>
+
+      <nav className={`navbar ${menuOpen ? "active" : ""}`}>
         {[
           { id: "home", label: "Home", delay: 1 },
           { id: "about", label: "About", delay: 2 },
