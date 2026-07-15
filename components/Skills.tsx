@@ -71,7 +71,7 @@ export default function Skills() {
           <i className="bx bx-music"></i>
           <h3>Music & Creativity</h3>
           <p>
-            Débutante en guitare, je développe progressivement un intérêt pour la composition musicale. Cette pratique stimule ma créativité et enrichit ma manière d’aborder la résolution de problèmes et la pensée conceptuelle.
+            En tant que choriste, je développe progressivement un intérêt pour la composition musicale. Cette passion nourrit ma créativité et renforce ma capacité à aborder la résolution de problèmes ainsi que la pensée conceptuelle sous un angle innovant.
           </p>
         </div>
       </div>
